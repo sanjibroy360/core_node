@@ -1,6 +1,7 @@
 1. Explain Node and V8 in your own words ? 
 // Answer here...
 
+
 2. Explain steps in REPL(here) and command to start REPL ?
 // Answer here...
 
@@ -26,11 +27,7 @@
     - export it from math.js
     - require in index.js and console the output by executing it there.
 ```js
-// math.js
-const pie = 3.14;
-function sum() {}
-function multiply() {}
-// export it from math.js
+
 ```
 
   2. Define above const and functions as properties and methods on module.exports object.
@@ -39,11 +36,15 @@ function multiply() {}
 ```js
   module.exports = {
     pie: 3.14,
-    add: () => {}
+    add: (a, b) => a + b 
   }
 ```
   3. Define above using exports 
 
 ```js
-exports.sum = () => {}
+
+exports.pie = 3.14;
+exports.sum = (a, b) => a + b;
+exports.multiply = (a, b) => a * b;
+
 ```
